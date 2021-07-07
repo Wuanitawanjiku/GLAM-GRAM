@@ -50,18 +50,75 @@ nav ul li a:hover{
 }
 
 /* home-page */  
-img{
-    height: 400px;
-    width: 270px;
-    margin-left: 70%;
-    margin-top: -35%;
+#home-img1 img{
+    height: 450px;
+    width: 320px;
+    margin-left: 62%;
+    margin-top: -33%;
     
 }
-#home-img2{
-    height: 400px;
-    width: 270px;
-    margin-left: 28%;
-    margin-top: -25%;
+#home-img2 img{
+    height: 451px;
+    width: 320px;
+    margin-left: 62%;
+    margin-top: -36.5%;
+    position: absolute;
+}
+#home-img3 img{
+    height: 451px;
+    width: 320px;
+    margin-left: 62%;
+    margin-top: -36.5%;
+    position: absolute;
+}
+#home-img4 img{
+    height: 451px;
+    width: 320px;
+    margin-left: 62%;
+    margin-top: -36.5%;
+    position: absolute;
+}
+#home-img5 img{
+    height: 451px;
+    width: 320px;
+    margin-left: 62%;
+    margin-top: -36.5%;
+    position: absolute;
+}
+#home-img6 img{
+    height: 451px;
+    width: 320px;
+    margin-left: 62%;
+    margin-top: -36.5%;
+    position: absolute;
+}
+#home-img7 img{
+    height: 451px;
+    width: 320px;
+    margin-left: 62%;
+    margin-top: -36.5%;
+    position: absolute;
+}
+#home-img8 img{
+    height: 451px;
+    width: 320px;
+    margin-left: 62%;
+    margin-top: -36.5%;
+    position: absolute;
+}
+#home-img9 img{
+    height: 451px;
+    width: 320px;
+    margin-left: 62%;
+    margin-top: -36.5%;
+    position: absolute;
+}
+#home-img10 img{
+    height: 451px;
+    width: 320px;
+    margin-left: 62%;
+    margin-top: -36.5%;
+    position: absolute;
 }
 #home-page{ 
     height: 450px;   
@@ -87,20 +144,21 @@ img{
     color: #ffffff;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    margin-left: 70px;
+    margin-left: 100px;
     opacity: 50%;
     margin-top: 80px;
 }
 #one{
     color: #000000;
-    margin-left: 250px; 
-    font-size: large;  
+    margin-left: 300px; 
+    font-size: 40px;  
     font-weight: 1000; 
 } 
 #two{
     color: rgba(0, 0, 0, 0.993);
-    margin-left: 270px;
-    font-size: large;
+    margin-left: 465px;
+    margin-top: -30px;
+    font-size: 30px;
     font-weight: 1000;
 }
 
