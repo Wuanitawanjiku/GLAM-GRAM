@@ -165,12 +165,53 @@ nav ul li a:hover{
 
 /* About */
 #about{
-    background-color: salmon;
     width: 100;
     height: 800px;
     display: flex;
     align-items: center;    
 }
+#about h1{
+    color: #ffffff;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-left: -1024px;
+    opacity: 50%;
+    margin-top: 67px;
+    font-size: 50px;
+}
+#about h2{
+    margin-top: -500px;
+    margin-left: 100px;
+}
+#line{
+    width: 1000px;
+    background-color: black;
+    height: 1px;
+    margin-left: 7px;
+    margin-top: -37%;
+    opacity: 32%;
+}
+#name{
+    color: brown;
+    font-size: 25px;
+    font-weight: 600;
+}
+#paragraph{
+    margin-top: -70px;
+    margin-left: 480px;
+    font-size: 16px;
+}
+.about-page-heading{
+    width: 1250px;
+    height: 520px;
+    position: absolute;
+    left: 5%;
+    top: 175%;   
+    color:  #e900af00;
+    transform: translate(-1%, -50%); 
+    background-color: rgba(169, 100, 100, 0.33);  
+}
+
 
 
 
