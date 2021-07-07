@@ -251,3 +251,35 @@ nav ul li a:hover{
     color: #000;
     text-transform: uppercase;
 } */
+
+.card {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    height: 450px;
+    background-color: #ffffff;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 20px 0 rgba(27, 26, 26, 0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  img{
+      width: 100%;
+      height: 360px;
+  }
+  .fall{
+      display: flex;
+      justify-content: space-evenly;
+  }
+  .summer{
+      display: flex;
+      justify-content: space-evenly;
+  }
+  .winter{
+       display: flex;
+      justify-content: space-evenly;
+  }
