@@ -45,8 +45,8 @@ nav ul li a{
   
 }
 nav ul li a:hover{
-    border-bottom: 2px solid #e900af;
-    box-shadow: 5px 10px 30px rgba(255, 0, 212, 0.993);
+    border-bottom: 2px solid brown;
+    box-shadow: 5px 10px 30px brown;
 }
 
 /* home-page */  
@@ -166,9 +166,10 @@ nav ul li a:hover{
 /* About */
 #about{
     width: 100;
-    height: 800px;
+    height: 1100px;
     display: flex;
-    align-items: center;    
+    align-items: center; 
+    margin-top: -175px;   
 }
 #about h1{
     color: #ffffff;
@@ -176,11 +177,11 @@ nav ul li a:hover{
     transform: rotate(180deg);
     margin-left: -1024px;
     opacity: 50%;
-    margin-top: 67px;
+    margin-top: -245px;
     font-size: 50px;
 }
 #about h2{
-    margin-top: -500px;
+    margin-top: -800px;
     margin-left: 100px;
 }
 #line{
@@ -188,7 +189,7 @@ nav ul li a:hover{
     background-color: black;
     height: 1px;
     margin-left: 7px;
-    margin-top: -37%;
+    margin-top: -59%;
     opacity: 32%;
 }
 #name{
@@ -197,57 +198,155 @@ nav ul li a:hover{
     font-weight: 600;
 }
 #paragraph{
-    margin-top: -70px;
+    margin-top: -440px;
     margin-left: 480px;
     font-size: 16px;
 }
+#about-img1 img{
+    height: 250px;
+    width: 250px;
+    margin-left: 24%;
+    position: absolute;
+    margin-top: -915px;
+    transition: width 2s, height 2s, transform 2s, linear 2s;
+}
+#about-img1 img:hover {
+    /* width: 300px;
+    height: 300px;
+    transform: rotateZ(360deg); */
+    border-bottom: 2px solid #E8AEA3;
+    box-shadow: 5px 10px 30px #E8AEA3;
+   }
+
+#about-img2 img{
+    height: 250px;
+    width: 280px;
+    margin-left: 60%;
+    position: absolute;
+    margin-top: -660px;
+    transition: width 2s, height 2s, transform 2s, linear 2s;
+}
+#about-img2 img:hover {
+    border-bottom: 2px solid #E8AEA3;
+    box-shadow: 5px 10px 30px #E8AEA3;
+    }
+#about-img3 img{
+    height: 300px;
+    width: 200px;
+    margin-left: 25.5%;
+    position: absolute;
+    margin-top: -710px;
+    transition: width 2s, height 2s, transform 2s, linear 2s;
+}
+#about-img3 img:hover{
+    border-bottom: 2px solid #E8AEA3;
+    box-shadow: 5px 10px 30px #E8AEA3;
+}
+
 .about-page-heading{
     width: 1250px;
     height: 520px;
     position: absolute;
     left: 5%;
-    top: 175%;   
+    top: 145%;   
     color:  #e900af00;
     transform: translate(-1%, -50%); 
     background-color: rgba(169, 100, 100, 0.33);  
 }
 
-
-
+/* Collections */
+.winter{
+    width: 1250px;
+    height: 520px;
+    position: absolute;
+    left: 5%;
+    top: 238%;  
+    color:  #e900af00;
+    transform: translate(-1%, -50%); 
+    background-color: rgba(169, 100, 100, 0.33);
+}
+.summer{
+    width: 1250px;
+    height: 520px;
+    position: absolute;
+    left: 5%;
+    top: 332%;  
+    color:  #e900af00;
+    transform: translate(-1%, -50%); 
+    background-color: rgba(169, 100, 100, 0.33);
+}
+.fall{
+    width: 1250px;
+    height: 520px;
+    position: absolute;
+    left: 5%;
+    top: 430%;  
+    color:  #e900af00;
+    transform: translate(-1%, -50%); 
+    background-color: rgba(169, 100, 100, 0.33);
+}
 
 
 /* Contact */
-/* #contact{
+#contact{
     width: 100%;
     display: flex;
+    margin-top: -32%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 40px 0px;
-    background-color: #1e1e1e;
+    padding: 30px 0px;
+    background-color: #E8AEA3;
+    border: transparent;
+}
+.contact-page{
+    width: 1250px;
+    height: 520px;
+    position: absolute;
+    left: 5%;
+    top: 520%;   
+    color:  #e900af00;
+    transform: translate(-1%, -50%); 
+    background-color: rgba(169, 100, 100, 0.33);
+}
+.contact-page p{
+    width: 250px;
+    margin-left: -480px;  
+}
+.contact-page p{
+    width: 250px;
+    height: 2px;
+    margin-left: -480px;
+        
 }
 #contact form{
-    width: 600px;
+    width: 30%;
+    margin-left: -40%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: -315%;
 }
 #contact form input, #contact form textarea{
-    width: 100%;
-    height: 50px;
+    width: 80%;
+    height: 30px;
     margin: 5px 0px;
     padding: 10px;
     background-color: #fff;
-    color: #1e1e1e;
-    border-radius: 5px;
+    border-radius: 20px;
+    border: transparent;
+    margin-left: -82px;
+    z-index: 2;
 }
 #contact form textarea{
-    height: 150px;
+    height: 100px;
 }
 #contact form input[type="submit"]{
     height: 45px;
-    background-color: #00e9a5;
-    color: #000;
+    background-color: #b18076;
     text-transform: uppercase;
-} */
+    width: 110px;
+    margin-left: -320px;
+}
+
