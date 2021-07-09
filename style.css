@@ -22,7 +22,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;    
-    position: sticky; 
+    /* position: sticky;  */
     z-index: 9999; 
     top: 0;  
 }
@@ -349,6 +349,7 @@ nav ul li a:hover{
     padding: 30px 0px;
     background-color: #E8AEA3;
     border: transparent;
+    margin-bottom: 20%;
 }
 .contact-page{
     width: 1250px;
@@ -358,18 +359,17 @@ nav ul li a:hover{
     top: 520%;   
     color:  #e900af00;
     transform: translate(-1%, -50%); 
-    background-color: rgba(169, 100, 100, 0.33);
+    background-color: rgba(169, 100, 100, 0.33);   
 }
-.contact-page p{
-    width: 250px;
-    margin-left: -480px;  
+#des{
+  text-align: left;
+  position: absolute;
+  left: 15%;
+  top: 485%;
+  font-size: 20px;
+   
 }
-.contact-page p{
-    width: 250px;
-    height: 2px;
-    margin-left: -480px;
-        
-}
+
 #contact form{
     width: 30%;
     margin-left: -40%;
@@ -379,6 +379,7 @@ nav ul li a:hover{
     flex-direction: column;
     margin-bottom: -315%;
 }
+
 #contact form input, #contact form textarea{
     width: 80%;
     height: 30px;
@@ -400,41 +401,69 @@ nav ul li a:hover{
     width: 110px;
     margin-left: -320px;
 }
-/* collections animations */
+h6{
+    font-size: 20px;
+    color: brown;
+}
+.icons{
+    border: transparent;
+    background-color: transparent;
+    
+}
+/* #icons{
+    display: flex;
+    margin-left: 138%;
+} */
 
-.snow{
+.text-contact{
     position: absolute;
-    top: 105%;
+    left: 60%;
+    top:491%;
+    font-size: 18px;
+    line-height: 150%;
+}
+/* collections animations */
+.add-btn{
+    border: transparent;
+    background-color:#b18076 ;
+    height: 25px;
+    border-radius: 5px  ;
+
+}
+
+.snows{
+    position: absolute;
+    top: 5%;
+    height: 20px;
     animation: snowing linear forwards;
 }
 @keyframes snowing{
     to{
-        transform: translateY(200px);
+        transform: translateY(480px);
     }
 }
 .leaf{
     position: absolute;
-    top: -10px;
+    top: 400%;
+    height: 20px;
     animation: fall linear forwards;
 }
-@keyframes fall{
-     0% {transform: translateY(10vh) rotateZ(0deg);}
-    2% {transform: translateY(20vh) rotateZ(0deg);}
-    5% {transform: translateY(30vh) rotateZ(0deg);}
-    20% {transform: translateY(50vh)  ;}
-    50% {transform: translateY(80vh) rotateX(80deg) ;}
-     95% {transform: translateY(100vh) rotateX(280deg) ;}
-    100% {transform: translateY(140vh) rotate(360deg);}
+@keyframes fall{   
+ 
+    to{
+        transform: translateY(700px) rotate(360deg);
+    }
 }
 .sunflower{
     position: absolute;
-    top: -10px;
+    top: 294%;
+    height: 10px;
     animation: sun linear forwards;
 }
 /* hundredths of the viewports height : vh */
 @keyframes sun{
     to{
-        transform: translateY(105vh) rotate(360deg);
+        transform: translateY(500px) rotate(120deg);
     }
 }
 
@@ -447,6 +476,7 @@ nav ul li a:hover{
     background-color: #FFFFFF;
     margin-top: 32px;
     color: rgb(71, 70, 70);
+    z-index: 99;
   }
   .card:hover {
     box-shadow: 0 10px 20px 0 rgba(27, 26, 26, 0.2);
@@ -471,3 +501,26 @@ nav ul li a:hover{
       justify-content: space-evenly;
   }
 
+  #myBtn {
+    display: none; /* Hidden by default */
+   position: fixed; /* Fixed/sticky position */
+   bottom: 20px; /* Place the button at the bottom of the page */
+   right: 30px; /* Place the button 30px from the right */
+   z-index: 99; /* Make sure it does not overlap */
+   border: none; /* Remove borders */
+   outline: none; /* Remove outline */
+   background-color: red-rose; /* Set a background color */
+   color: rgb(201, 105, 105); /* Text color */
+   cursor: pointer; /* Add a mouse pointer on hover */
+   padding: 15px; /* Some padding */
+   border-radius: 10px; /* Rounded corners */
+   font-size: 18px; /* Increase font size */
+  }
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  } 
+  #footer{
+      position: absolute;
+      top: 570%;
+      left: 40%;
+  }

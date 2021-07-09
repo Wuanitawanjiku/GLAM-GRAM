@@ -88,67 +88,91 @@ function homePageTransition(){
     }
 }
 
+//Get the button:
+mybutton = document.getElementById("myBtn");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 //collections animations
-// function makeSnow(){
-//     const snow = document.createElement("img");
-//     //creating the source of the image
-//     snow.src = "snow.png";
-//     //adding a class name to the image
-//     snow.classList.add("snow");
-//     //adding a random width between 10 and 30px
-//     snow.style.width = Math.random() *10 + 20 + 'px';
-//     //making the image's left position to be from 0 to the window's inner width
-//     snow.style.left = Math.random() *1250 + 'px';
-//     //generating a random animatiion duration
-//     snow.style.animationDuration = Math.random()*3 + 2 + 's';
-//     //adding an opacity from 0 to 1
-//     snow.style.opacity = Math.random();
-//     var falls = document.getElementById("fall").appendChild(snow);
-//     //appending the created image into the body
-// //    document.body.appendChild(snow);
-//     //removing the snow from the DOM
-//     setTimeout(()=> {snow.remove();},4000);
-// }
-// setInterval(makeSnow, 100);
-// function makeLeafFall(){
-//     //creating an image element
-//     const leaf =  document.createElement("img");
-//     //adding the image source
-//     leaf.src = "leaf.png";
-//     //adding a class name
-//     leaf.classList.add ("leaf");
-//      //adding a random width between 10 and 40px
-//     leaf.style.width = Math.random() *10 + 40 + 'px';
-//       //making the image's left position to be from 0 to the window's inner width
-//     leaf.style.left = Math.random() *window.innerWidth + 'px';
-//     //generating a random animatiion duration
-//     leaf.style.animationDuration = Math.random()*3 + 5 + 's';
-//     //adding an opacity from 0 to 1
-//     leaf.style.opacity = Math.random();
-//     //appending the created image into the body
-//    document.body.appendChild(leaf);
-//     //removing the snow from the DOM
-//     setTimeout(()=> {leaf.remove();},4000);
-// }
-// setInterval(makeLeafFall,100);
-// function makeSunflowers(){
-//     const sunFlower = document.createElement("img");
-//    //creating the source of the image
-//     sunFlower.src = "sunflower.png";
-//     //adding a class name to the image
-//     sunFlower.classList.add("sunflower");
-//     //adding a random width between 10 and 50px
-//     sunFlower.style.width = Math.random() *10 + 50 + 'px';
-//     //making the image's left position to be from 0 to the window's inner width
-//     sunFlower.style.left = Math.random() *window.innerWidth + 'px';
-//     //generating a random animatiion duration
-//     sunFlower.style.animationDuration = Math.random()*3 + 2 + 's';
-//     //adding an opacity from 0 to 1
-//     sunFlower.style.opacity = Math.random();
-//     //appending the created image into the body
-//    document.body.appendChild(sunFlower);
-//     //removing the snow from the DOM
-//     setTimeout(()=> {sunFlower.remove();},4000);
-// }
-// //appending a new image every 100ms
-// setInterval(makeSunflowers, 100);
+function makeSnow(){
+    const snow = document.createElement("img");
+    //creating the source of the image
+    snow.src = "snow.png";
+    //adding a class name to the image
+    snow.classList.add("snows");
+    //adding a random width between 10 and 30px
+    snow.style.width = Math.random() *10 + 20 + 'px';
+    //making the image's left position to be from 0 to the window's inner width
+    snow.style.left = Math.random() *1250 + 'px';
+    //generating a random animatiion duration
+    snow.style.animationDuration = Math.random()*3 + 2 + 's';
+    //adding an opacity from 0 to 1
+    snow.style.opacity = Math.random();
+    var s = document.getElementsByClassName("winter");
+      //appending the created image into the body
+    var season = s[0].appendChild(snow);
+  
+  
+
+    //removing the snow from the DOM
+    setTimeout(()=> {snow.remove();},3000);
+}
+setInterval(makeSnow, 100);
+function makeLeafFall(){
+    //creating an image element
+    const leaf =  document.createElement("img");
+    //adding the image source
+    leaf.src = "leaf.png";
+    //adding a class name
+    leaf.classList.add ("leaf");
+     //adding a random width between 10 and 40px
+    leaf.style.width = Math.random() *10 + 40 + 'px';
+      //making the image's left position to be from 0 to the window's inner width
+    leaf.style.left = Math.random() *1250 + 'px';
+    //generating a random animatiion duration
+    leaf.style.animationDuration = Math.random()*3 + 5 + 's';
+    //adding an opacity from 0 to 1
+    leaf.style.opacity = Math.random();
+    //appending the created image into the section
+    var falls = document.getElementsByClassName("falls");
+    var leaves = falls[0].appendChild(leaf);
+   document.body.appendChild(leaf);
+    //removing the snow from the DOM
+    setTimeout(()=> {leaf.remove();},3000);
+}
+setInterval(makeLeafFall,100);
+function makeSunflowers(){
+    const sunFlower = document.createElement("img");
+   //creating the source of the image
+    sunFlower.src = "sunflower.png";
+    //adding a class name to the image
+    sunFlower.classList.add("sunflower");
+    //adding a random width between 10 and 50px
+    sunFlower.style.width = Math.random() *10 + 40 + 'px';
+    //making the image's left position to be from 0 to the window's inner width
+    sunFlower.style.left = Math.random() *1250 + 'px';
+    //generating a random animatiion duration
+    sunFlower.style.animationDuration = Math.random()*3 + 2 + 's';
+    //adding an opacity from 0 to 1
+    sunFlower.style.opacity = Math.random();
+    //appending the created image into the body
+    var summer = document.getElementsByClassName("summers");
+    var sun = summer[0].appendChild(sunFlower);
+  
+    //removing the snow from the DOM
+    setTimeout(()=> {sunFlower.remove();},3000);
+}
+//appending a new image every 100ms
+setInterval(makeSunflowers, 100);
